@@ -268,7 +268,9 @@ From any device on the same WiFi: `http://<ip-shown-in-serial-monitor>`
 
 A short demo of the system running live, with the dashboard and OLED pages cycling:
 
-<!-- VIDEO SLOT — see instructions below the README on how to insert your video here -->
+
+https://github.com/user-attachments/assets/f2928d24-dde4-434d-9b15-517575937de7
+
 
 ---
 
