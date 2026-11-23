@@ -305,8 +305,6 @@ AQI breakpoints follow USEPA conventions as adopted by Bangladesh DoE (NAQMP 202
 
 ## License
 
-## License
-
 This project is released under the MIT License — see the [LICENSE](LICENSE) file for the full text.
 
-You are free to use, copy, modify, and distribute the firmware and documentation, including for commercial purposes, as long as the original copyright notice is kept. The software is provided "as is" without warranty.
+You are free to use, copy, modify, and distribute the firmware, including for commercial purposes, as long as the original copyright notice is kept. The software is provided "as is" without warranty.
