@@ -2,7 +2,9 @@
 
 A low-cost, portable, dual-ESP32 air quality monitor built around the Bangladesh Department of Environment (DoE) AQI standard. Reads six regulated pollutants plus particulates, computes a composite AQI in real time, drives a local OLED + LED + buzzer alert, serves a self-hosted web dashboard, and logs every reading to Google Sheets.
 
-![Live dashboard — AQI 103 at Bosila, Dhaka](docs/images/04-dashboard-main.png)
+<p align="center">
+  <img src="docs/images/04-dashboard-main.png" alt="Live dashboard — AQI 103 at Bosila, Dhaka" width="600">
+</p>
 
 ---
 
@@ -40,7 +42,9 @@ Splitting sensing from networking keeps the sensor loop deterministic. Board 1 n
 
 ## System Architecture
 
-![System block diagram](docs/images/01-system-architecture.png)
+<p align="center">
+  <img src="docs/images/01-system-architecture.png" alt="System block diagram" width="750">
+</p>
 
 Board 1 runs on an 18650 Li-ion battery (with optional solar charging) so it can be deployed portably. Board 2 runs on USB 5V, since it needs stable power for the WiFi radio and HTTPS stack. The two share only the UART line and a common ground.
 
@@ -64,13 +68,17 @@ Board 1 runs on an 18650 Li-ion battery (with optional solar charging) so it can
 | Power (Board 1)  | 18650 Li-ion + solar charger     | Portable, eco-friendly operation             |
 | Power (Board 2)  | USB 5V                           | Stable supply for WiFi + HTTPS               |
 
-![Hardware prototype — enclosure, both ESP32 boards, sensors, LEDs, OLED, solar panel, 18650 cells](docs/images/06-hardware-photo.jpg)
+<p align="center">
+  <img src="docs/images/06-hardware-photo.jpg" alt="Hardware prototype — enclosure, both ESP32 boards, sensors, LEDs, OLED, solar panel, 18650 cells" width="450">
+</p>
 
 ---
 
 ## Wiring
 
-![Fritzing wiring diagram — breadboard layout for both boards](docs/images/05-wiring-diagram.png)
+<p align="center">
+  <img src="docs/images/05-wiring-diagram.png" alt="Fritzing wiring diagram — breadboard layout for both boards" width="600">
+</p>
 
 The wiring above reflects the prototype as built. A cleaner schematic for documentation and manufacturing is planned.
 
@@ -114,11 +122,15 @@ Board 2 hosts a responsive single-page dashboard on port 80. Any browser on the 
 
 The top of the dashboard shows the current AQI, a color-coded SVG gauge, the dominant pollutant, and per-pollutant readings:
 
-![Dashboard — current AQI, SVG gauge, per-pollutant breakdown](docs/images/04-dashboard-main.png)
+<p align="center">
+  <img src="docs/images/04-dashboard-main.png" alt="Dashboard — current AQI, SVG gauge, per-pollutant breakdown" width="650">
+</p>
 
 Below that, a 24-reading AQI trend chart, the DoE category legend, environmental conditions, and Google Sheets logging status:
 
-![Dashboard — AQI trend chart, categories, environment, logging status](docs/images/03-dashboard-trend.png)
+<p align="center">
+  <img src="docs/images/03-dashboard-trend.png" alt="Dashboard — AQI trend chart, categories, environment, logging status" width="700">
+</p>
 
 ---
 
@@ -146,7 +158,9 @@ The firmware calculates a sub-index for each pollutant and reports the **maximum
 
 ### Full breakpoint table
 
-![AQI breakpoint table — six pollutants mapped to the 0–500 AQI scale](docs/images/02-aqi-breakpoints.png)
+<p align="center">
+  <img src="docs/images/02-aqi-breakpoints.png" alt="AQI breakpoint table — six pollutants mapped to the 0–500 AQI scale" width="600">
+</p>
 
 Each sub-index maps onto the same 0–500 AQI scale. Averaging times follow the DoE / USEPA convention shown above.
 
