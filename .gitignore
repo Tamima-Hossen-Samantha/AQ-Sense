@@ -1,0 +1,40 @@
+# === Secrets (NEVER commit these) ===
+secrets.h
+*.secret
+.env
+*.key
+*.pem
+
+# === Arduino / ESP32 build output ===
+build/
+*.bin
+*.elf
+*.hex
+*.map
+*.o
+*.a
+
+# === PlatformIO ===
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/
+
+# === OS / Editor cruft ===
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*~
+.idea/
+
+# === Python (if analysis scripts are added later) ===
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# === Jupyter ===
+*.ipynb_checkpoints
